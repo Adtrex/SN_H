@@ -15,8 +15,13 @@ $errorArray = [];
 //verifying Data
 
 if ($first_name == "") {
-	$errorArray = "first_name cannot be empty";
+	$errorArray = "first_name cannot be blank";
 }
+
+if ($last_name == "") {
+	$errorArray = "last_name cannot be blank";
+}
+
 print_r($errorArray);
 
 
